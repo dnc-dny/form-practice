@@ -5,9 +5,162 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FormPractice</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
+  <section class="wrapper">
+    <div class="container">
+      <h1>フォーム作成</h1>
+      <div class="form">
+        <form action>
+          <h2>アカウント作成</h2>
+          <div class="personal">
+            <h3>個人情報</h3>
+            <div class="section">
+              <label for="first-name">名字<span>※</span></label>
+              <input type="text" id="first-name">
+            </div>
+            <div class="section">
+              <label for="last-name">名前<span>※</span></label>
+              <input type="text" id="last-name">
+            </div>
+            <div class="section">
+              <label>生年月日</label><span>※</span></label>
+              <div class="select_group">
+                <div class="select_part">
+                  <select name="year">
+                    <option value="" hidden>年</option>
+                    <option value="">2000</option>
+                    <option value="">2001</option>
+                    <option value="">2002</option>
+                    <option value="">2003</option>
+                    <option value="">2004</option>
+                    <option value="">2005</option>
+                    <option value="">2006</option>
+                    <option value="">2007</option>
+                    <option value="">2008</option>
+                    <option value="">2009</option>
+                    <option value="">2010</option>
+                  </select>
+                </div>
+                <div class="select_part">
+                  <select name="month">
+                    <option value="" hidden>月</option>
+                    <option value="">1</option>
+                    <option value="">2/option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                    <option value="">6</option>
+                    <option value="">7</option>
+                    <option value="">8</option>
+                    <option value="">9</option>
+                    <option value="">10</option>
+                    <option value="">11</option>
+                    <option value="">12</option>
+                  </select>
+                </div>
+                <div class="select_part">
+                  <select name="day">
+                    <option value="" hidden>日</option>
+                    <option value="">1</option>
+                    <option value="">2/option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                    <option value="">6</option>
+                    <option value="">7</option>
+                    <option value="">8</option>
+                    <option value="">9</option>
+                    <option value="">10</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="section">
+              <p>性別<span>※</span></p>
+              <label>
+                <input type="radio" name="sex" value="man">
+                <span>男性</span>
+              </label>
+              <label>
+                <input type="radio" name="sex" value="woman">
+                <span>女性</span>
+              </label>
+              <label>
+                <input type="radio" name="sex" value="other">
+                <span>その他</span>
+              </label>
+            </div>
+            <div class="section">
+              <label>職業</label>
+              <div class="select_part">
+                <select name="work">
+                  <option value="" hidden>選択してください</option>
+                  <option value="">学生</option>
+                  <option value="">会社員</option>
+                  <option value="">主婦</option>
+                  <option value="">その他</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="account">
+            <h3>アカウント情報</h3>
+            <div class="section">
+              <label for="account_name">アカウント名<span>※</span></label>
+              <input type="text" id="account_name">
+            </div>
+            <div class="section">
+              <label for="mail_address">メールアドレス<span>※</span></label>
+              <input type="email" id="mail_address">
+            </div>
+            <div class="section">
+              <label for="pass">パスワード<span>※</span></label>
+              <input type="password" id="pass">
+            </div>
+            <div class="section">
+              <label for="pass_second">確認用パスワード<span>※</span></label>
+              <input type="password" id="pass_second">
+            </div>
+          </div>
+          <div class="contact">
+            <h3>連絡先</h3>
+            <div class="section">
+              <label for="address">住所<span>※</span></label>
+              <input type="text" id="address">
+            </div>
+            <div class="section">
+              <label for="telephone">電話番号<span>※</span></label>
+              <input type="tel" id="telephone">
+            </div>
+          </div>
+          <div class="subscription">
+            <h3>購読情報</h3>
+            <div class="section">
+              <label>
+                <input type="checkbox" name="check1" value="選択肢" id="magazine">
+                <label for="magazine">メールマガジン</label>
+              </label>
+              <label>
+                <input type="checkbox" name="check2" value="選択肢" id="coupon">
+                <label for="coupon">クーポン</label>
+              </label>
+            </div>
+          </div>
+          <div class="create">
+            <button type="submit">アカウント作成</button>
+            <p>アカウントを作成することにより、<a href="#">利用規約</a>と<a href="#">プライバシーポリシー</a>
+              に同意するものとします。</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
 
 </body>
 
