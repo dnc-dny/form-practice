@@ -2,7 +2,6 @@
 
 .wrapper{
   width: 100%;
-  margin: 0 auto;
   background: #cff1ff;
 }
 
@@ -13,6 +12,161 @@
 
 h1{
   text-align: center;
-  margin-top: 60px;
+  padding-top: 60px;
   font-size: 28px;
+}
+
+.form-position{
+  padding: 50px;
+  background: #ecfaff;
+  margin-top: 60px;
+}
+
+h2{
+  font-size: 24px;
+  text-align: center;
+}
+
+.personal,.account,.contact,.subscription,.create{
+  margin-top: 50px;
+}
+
+h3{
+  font-size: 18px;
+  color: #000000;
+}
+
+.section{
+  margin-top: 25px;
+}
+
+.label_name{
+  font-size: 14px;
+  color: #464646;
+}
+
+.attention{
+  color: #e40000;
+}
+
+.input_box{
+  width: 100%;
+  margin-top: 6px;
+  height: 35px;
+  padding: 5px;
+  color: #545658;
+  border: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  background: #fbfbfb;
+}
+
+.select_group{
+  margin-top: 6px;
+}
+
+.flex{
+  display: flex;
+}
+
+.select_part{
+  width: 100%;
+  position: relative;
+}
+
+option{
+  font-weight: normal;
+  display: block;
+  min-height: 1.2em;
+  padding: 0 2px 1px;
+  white-space: nowrap;
+}
+
+.select_part:after{
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  right: 7px;
+  top: 45%;
+  display: inline-block;
+  border-bottom: 2px solid #c3c3c3;
+  border-right: 2px solid #c3c3c3;
+  transform: rotate(45deg);
+}
+
+.gender{
+  margin-left: 10px;
+}
+
+.gender:first-child{
+  margin-left: 0;
+}
+
+.gender_choice{
+  position: relative;
+  display: inline-block;
+  padding: 3px 3px 3px 20px;
+  color: #545658;
+}
+
+.gender_choice:before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  width: 14px;
+  height: 14px;
+  background: #fbfbfb;
+  border: 1px solid #d9d9d9;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.subscription_name{
+  position: relative;
+  padding-left: 25px;
+}
+
+.subscription_name:before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  width: 15px;
+  height: 15px;
+  margin-top: -8px;
+  border: 1px solid #d9d9d9;
+  background: #ffffff;
+}
+
+.create button{
+  padding: 13px;
+  background: #0170bf;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.create button:active {
+  background: #fff;
+  color: #0170bf;
+  border: 1px solid #d9d9d9;
+}
+
+.create p{
+  margin-top: 25px;
+  font-size: 10px;
+}
+
+.create a{
+  color: #0170bf;
+  text-decoration: none;
 }
