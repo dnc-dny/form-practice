@@ -86,7 +86,7 @@ option{
   position: absolute;
   width: 5px;
   height: 5px;
-  right: 7px;
+  right: 10px;
   top: 45%;
   display: inline-block;
   border-bottom: 2px solid #c3c3c3;
@@ -125,6 +125,7 @@ option{
 .subscription_name{
   position: relative;
   padding-left: 25px;
+  display: block;
 }
 
 .subscription_name:before{
@@ -169,4 +170,14 @@ option{
 .create a{
   color: #0170bf;
   text-decoration: none;
+}
+
+input, select, button {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0px;
 }
