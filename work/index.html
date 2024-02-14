@@ -21,18 +21,18 @@
             <h3>個人情報</h3>
             <div class="section">
               <label class="label_name" for="first-name">名字<span class="attention">※</span></label>
-              <input class="input_box" type="text" id="first-name">
+              <input class="input_box" type="text" id="first-name" autocomplete="family_name" required>
             </div>
             <div class="section">
               <label class="label_name" for="last-name">名前<span class="attention">※</span></label>
-              <input class="input_box" type="text" id="last-name">
+              <input class="input_box" type="text" id="last-name" autocomplete="last_name" required>
             </div>
             <div class="section">
               <label class="label_name">生年月日</label><span class="attention">※</span></label>
               <div class="select_group flex">
                 <div class="select_part">
                   <select class="input_box" name="year">
-                    <option value="" hidden>年</option>
+                    <option value="" disabled selected>年</option>
                     <option value="">2000</option>
                     <option value="">2001</option>
                     <option value="">2002</option>
@@ -48,7 +48,7 @@
                 </div>
                 <div class="select_part">
                   <select class="input_box" name="month">
-                    <option value="" hidden>月</option>
+                    <option value="" disabled selected>月</option>
                     <option value="">1</option>
                     <option value="">2/option>
                     <option value="">3</option>
@@ -65,7 +65,7 @@
                 </div>
                 <div class="select_part">
                   <select class="input_box" name="day">
-                    <option value="" hidden>日</option>
+                    <option value="" disabled selected>日</option>
                     <option value="">1</option>
                     <option value="">2/option>
                     <option value="">3</option>
@@ -84,11 +84,11 @@
               <p class="label_name">性別<span class="attention">※</span></p>
               <div class="select_group">
                 <label class="gender">
-                  <input type="radio" name="sex" value="man">
+                  <input class="sex_choice" type="radio" name="sex" value="man">
                   <span class="gender_choice">男性</span>
                 </label>
                 <label class="gender">
-                  <input type="radio" name="sex" value="woman">
+                  <input class="sex_choice" type="radio" name="sex" value="woman">
                   <span class="gender_choice">女性</span>
                 </label>
                 <label class="gender">
@@ -102,7 +102,7 @@
               <div class="select_group">
                 <div class="select_part">
                   <select class="input_box" name="work">
-                    <option value="" hidden>選択してください</option>
+                    <option value="" disabled selected>選択してください</option>
                     <option value="">学生</option>
                     <option value="">会社員</option>
                     <option value="">主婦</option>
@@ -144,11 +144,11 @@
           </div>
           <div class="subscription">
             <h3>購読情報</h3>
-            <div class="section">
+            <div class="section subscription_part">
               <input type="checkbox" name="check1" value="選択肢" id="magazine">
               <label class="label_name subscription_name" for="magazine">メールマガジン</label>
             </div>
-            <div class="section">
+            <div class="section subscription_part">
               <input type="checkbox" name="check2" value="選択肢" id="coupon">
               <label class="label_name subscription_name" for="coupon">クーポン</label>
             </div>

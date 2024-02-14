@@ -60,6 +60,12 @@ h3{
   background: #fbfbfb;
 }
 
+.input_box:focus{
+  background-color: #fff;
+  border-color: rgba(93, 130, 194, 0.4);
+  box-shadow: 0px 0px 0px 2px rgba(1, 90, 191, 0.1);
+}
+
 .select_group{
   margin-top: 6px;
 }
@@ -102,6 +108,19 @@ option{
   margin-left: 0;
 }
 
+.sex_choice:checked +
+span:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: #017cbf;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
 .gender_choice{
   position: relative;
   display: inline-block;
@@ -138,6 +157,19 @@ option{
   margin-top: -8px;
   border: 1px solid #d9d9d9;
   background: #ffffff;
+}
+
+.subscription_part input:checked + .subscription_name:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 6px;
+  width: 6px;
+  height: 13px;
+  margin-top: -11px;
+  border-right: 3px solid #0140bf;
+  border-bottom: 3px solid #0140bf;
+  transform: rotate(45deg);
 }
 
 .create button{
